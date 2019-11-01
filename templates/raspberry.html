@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程操作页面</title>
+    <style type="text/css">
+        .btn{width: 400px;height: 400px;border-radius: 50%;border: none; font-size: 100px; color: #FFF}
+        .post_div{position: absolute;left:50%;top:50%; margin-left:-200px;margin-top:-400px}
+    </style>
+</head>
+<body>
+    <form action="/operation" method="get">
+        <div class="post_div">
+            <input type="submit" name="op" value="关机" class="btn" style="background:#F55;">
+            <p/>
+            <input type="submit" name="op" value="重启" class="btn" style="background:#55F;">
+        </div>
+    </form>
+</body>
+</html>
